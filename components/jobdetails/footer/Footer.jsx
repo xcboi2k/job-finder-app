@@ -17,6 +17,7 @@ const Footer = ({url}) => {
       </TouchableOpacity>
       <TouchableOpacity style={styles.applyBtn}>
         <Text style={styles.applyBtnText} onPress={() => Linking.openURL(url)}>
+          Apply
         </Text>
       </TouchableOpacity>
     </View>

@@ -22,6 +22,8 @@ const Popularjobs = () => {
     setSelectedJob(item.job_id)
   }
 
+  console.log("data is here",data)
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -41,7 +43,7 @@ const Popularjobs = () => {
           )
           : (
             <FlatList 
-              data={[1,2,3,4,5]}
+              data={data}
               renderItem={({item}) => (
                 <PopularJobCard 
                   item={item}
